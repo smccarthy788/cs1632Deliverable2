@@ -22,6 +22,12 @@ public class Inventory {
     public void foundCream(){
         cream = true;
     }
+
+    public boolean haveCoffee() {return coffee;}
+
+    public boolean haveCream() {return cream;}
+
+    public boolean haveSugar() {return sugar;}
     
     public void checkInventory(){
         if(coffee){

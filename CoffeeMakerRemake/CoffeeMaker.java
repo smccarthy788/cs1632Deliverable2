@@ -1,5 +1,7 @@
 package CoffeeMakerRemake;
 
+import java.util.Scanner;
+
 public class CoffeeMaker {
 
     public static Inventory initializeInventory(){
@@ -83,10 +85,16 @@ public class CoffeeMaker {
             
             // List commands
             System.out.println("\nINSTRUCTIONS (N,S,L,I,D,H) >\n");
-            
+
             // Accept command
-            String command = System.console().readLine();
-            
+            String command;
+            try { // This will work when CoffeeMaker is run from console.
+                command = System.console().readLine();
+            } catch(Exception e) { // This will work within IDEs.
+                Scanner sc = new Scanner(System.in);
+                command = sc.next();
+            }
+
             // Handle command
             switch(command){
                 case "N": case "n":

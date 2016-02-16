@@ -48,6 +48,8 @@ public class Room{
     public String describeSouthDoor(){
         return southDoor;
     }
+
+    public String describeItem() { return item;}
     
     public void look(Inventory inventory){
         if(item != null){
