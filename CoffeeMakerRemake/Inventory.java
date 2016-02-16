@@ -30,17 +30,17 @@ public class Inventory {
     public boolean haveSugar() {return sugar;}
     
     public void checkInventory(){
-        if(coffee){
+        if(haveCoffee()){
             System.out.println("You have a cup of delicious coffee.");
         } else {
             System.out.println("YOU HAVE NO COFFEE!");
         }
-        if(cream){
+        if(haveCream()){
             System.out.println("You have some fresh cream.");
         } else {
             System.out.println("YOU HAVE NO CREAM!");
         }
-        if(sugar){
+        if(haveSugar()){
             System.out.println("You have some tasty sugar.");
         } else {
             System.out.println("YOU HAVE NO SUGAR!");
