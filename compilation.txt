@@ -1,0 +1,21 @@
+1) Clone Repo
+
+- git clone https://github.com/smccarthy788/cs1632Deliverable2.git
+
+2) Navigate to repo root
+
+3) Execute:
+
+- javac CoffeeMakerRemake/CoffeeMaker.java CoffeeMakerRemake/Inventory.java CoffeeMakerRemake/Room.java -d .
+
+4) Run program
+
+- java CoffeeMakerRemake.CoffeeMaker
+
+------
+
+Comiple and Execute Tests
+
+1) Include Mockito and JUnit in class path
+2) javac CoffeeMakerTest.java
+3) java CoffeeMakerTest
